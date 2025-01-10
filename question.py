@@ -1,10 +1,10 @@
 import random
 
 class Question:
-    def __init__(self, text, choices, correct_choice):
-        self.text = text
-        self.choices = choices
-        self.correct_choice = correct_choice.lower()
+    def __init__(self, texte, choix, choix_correct):
+        self.texte = texte
+        self.choix = choix
+        self.choix_correct = choix_correct.lower()
 
-    def is_correct(self, answer):
-        return answer.lower() == self.correct_choice
+    def est_correct(self, reponse):
+        return reponse.lower() == self.choix_correct
